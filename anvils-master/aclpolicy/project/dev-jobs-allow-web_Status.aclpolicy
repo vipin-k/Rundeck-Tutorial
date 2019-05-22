@@ -1,0 +1,9 @@
+description: 'Allow dev users [run,read] for job, ops/web/status'
+for:
+  job:
+    - match:
+        group: ops/web
+        name: status
+      allow: [run,read]
+by:
+  group: dev
